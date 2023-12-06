@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tradeplatform"
+version = "0.1.0"
+description = ""
+authors = ["Leejs901226 <122760969+Leejs901226@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+httpx = "^0.25.2"
+sqlalchemy = "^2.0.23"
+alembic = "^1.13.0"
+uvicorn = "^0.24.0.post1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+coverage = "^7.3.2"
+
+
+[tool.poetry.group.lint.dependencies]
+black = "^23.11.0"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
